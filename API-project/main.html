@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APi-project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    #spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ccc;
+      border-top: 4px solid #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 100px auto; /* center on page */
+      display: none;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>Item 1</a></li>
+        <li><a>Parent </a></li>
+        <li><a>Item 3</a></li>
+      </ul>
+
+    </div>
+    <a onclick="loadallphone(false)" class="btn btn-ghost text-xl">daisyUI</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Item 1</a></li>
+      <li> <a>Parent</a></li>
+      <li><a>Item 3</a></li>
+
+    </ul>
+  </div>
+  <div class="gap-5">
+    <input id="searchtext" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+   <button onclick="searchdata()" class="btn btn-info">search</button>
+  </div>
+  </div>
+</div>
+<div id="spinner"></div>
+ 
+<section>
+   <div id="phone-container" class="gap-5 p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+   </div>
+</section>
+<div class="p-5 text-center ">
+    <button id="showallbtn" onclick="showall()" class="btn btn-error ">Show all</button>
+</div>
+<!-- Open the modal using ID.showModal() method -->
+<div id="modal-container">
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

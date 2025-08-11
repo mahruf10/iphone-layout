@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH tube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <Header>
+            <Nav class="w-11/12 mx-auto py-5 flex gap-5 justify-between border-b">
+                <div class="logo w-[100px]"><img src="Logo.png" alt="">   </div>
+          
+          <div class="search">
+  
+  <input type="search" class="grow" placeholder="Search" />
+     </div>
+    <button class="btn">SORT</button>
+ </Nav>
+  <nav id="category" class="my-5 flex gap-5 justify-center"></nav>
+        </Header>
+
+
+<main>
+    <section>
+        <div id="videos" class="w-11/12 my-10 mx-auto gap-5  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4"></div>
+    </section>
+</main>
+
+
+        <script src="ph.js"></script>
+</body>
+</html>
