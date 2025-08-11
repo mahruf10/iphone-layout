@@ -33,17 +33,7 @@ const loadallphone=(condition,brandname) =>{
 
 
 }
-    // const notFound=()=>{
-    //    const temp= document.getElementById("findsearch")
-    //   const getchild=document.getElementById('child')
-    //   getchild.innerHTML=`
-    //     <h2>Sorry your search product is not found</h2>
-       
-    //     `
-    //     temp.append(getchild);
-    // }
-
-
+  
 const searchdata=()=>{
     const searchtext=document.getElementById('searchtext').value;
    
